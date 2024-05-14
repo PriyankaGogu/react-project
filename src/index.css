@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-container {
+  width: 80%; /* Increased width */
+  max-width: 800px; /* Increased max-width */
+  padding: 40px; /* Doubled padding */
+  background-color: #f0f0f0;
+  border-radius: 12px; /* Increased border-radius */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15); /* Adjusted box shadow */
+}
+
+/* Additional styling for inputs and select */
+.input-item {
+  margin-bottom: 20px;
+}
+
+.select-item {
+  margin-bottom: 20px;
+}
+
+
+/* Add any additional styling for inputs, select, etc. */
+
+Image {
+  height: 110px;
+  width: 110px;
+  margin-left: 5%;
+  display: inline-block;
+}
+
+.checked {
+  color: orange;
+}
+.container {
+  display: inline-block;
+}

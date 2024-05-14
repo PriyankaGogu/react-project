@@ -1,0 +1,428 @@
+we need nodejs 
+
+
+version greater than 18 
+
+nodejs.org 
+
+https://nodejs.org/en
+
+PLEASE OPEN CMD 
+
+TYPE node --version 
+
+npm install pakage-name
+
+npm i create-react-app 
+
+npm i -g packagename 
+
+npm i localpacakge 
+
+npx to use localpacakge as global anywhere 
+
+
+npm i create-react-app 
+npx create-react-app modelnapp 
+cd modelnapp 
+npm start
+
+
+function Ashu(){
+    return <>
+    <h1>hello fraaaaands Chaiiiii peeeelo
+    </>
+}
+
+<button style="color:red ; background:">
+
+<button style={{color:"red" , "height:"10px"}}>
+
+
+
+Props --- Props is the data passed to a component 
+How ?
+
+we use a component like <Component prop1="value1 prop2="value2" />
+
+In the above line we have passed two props prop1 and prop2 
+these prop1 and prop2 will be converted into one object and will be received into that component which we are using 
+
+
+Example 
+
+i am calling Sidd Component with tech and people he can chose
+
+
+<Sidd tech="React" people={4} />
+<Sidd tech="Nodejs" people={5} />
+
+So Now Sidd is receiving a props object inside that object there are 2 keys tech and people
+function Sidd(props){} or function Sidd({tech,people}){} 
+
+
+
+
+<Employee tech="Devops" />   ----- {tech:"Devops"}
+<Employee tech="1234" />
+<Employee />
+
+
+function Employee({tech}){
+    return <h1>I am working on {tech} </h1>
+ 
+}
+function Employee(props){
+    return <h1>I am working on {props.tech} </h1>
+ 
+}
+
+Props is the way to pass informartion/data to component 
+
+If tag is coming show best seller else dont show that best seller element
+
+Conditional Rendering 
+
+React vs ANgular 
+
+React we are handling conditional the the js way
+
+if(props.data.tag){
+    than do somethnmg
+}
+else{
+    return 
+}
+
+
+<div>
+<label>
+</div>
+
+
+Virtual Dom-- Ligter representation of DOm 
+DIFFING algo --- finding he different in data in binding 
+Typescript  === JS + Data Types 
+Compoents
+Data Binding 
+Conditonal Rendering 
+props 
+
+
+u have a file demo.js  
+
+
+var demo = require("./demo.js")
+demo.PORT 
+
+import {PORT1,getFiles} from "./demo.js"
+
+var users = ["Sumanth" , "Akash" , "Shivam"]
+
+<label>{users[0]} </label>
+
+map
+
+for the number of elements into array that function will be called n times
+
+users.map(()=>{
+    return (
+        That View which u want to display
+    )
+})
+
+
+in project u should have 2 components Cakelist which will contain array of objects 
+
+var cakes = [{},{},{}]
+
+and a cake component which will display that object 
+
+so now cakelist component should render cake component using map function 
+
+{name:"Sumanth" , role:"Developer" , location:"Hyderabad"}
+
+Object.keys(object)
+
+function x (){}
+
+
+x()  // calling the fucntion 
+x // refering the fun ction
+
+var y = x()
+var z = x
+
+z()
+
+when user clicks a button ,  call a function getUsers 
+
+function getUsers(){
+
+}
+
+whenever an event happens call a function 
+
+in react syntax 
+
+onEvent={functionname}
+
+<button onClick={addUser} /> // Incorrect
+<button onClick={addUser} /> // Incorrect
+
+
+Events in React 
+
+onEventname = {functionName}
+
+click 
+copy
+cut
+mouseover
+keyr
+
+onCopy={AeChor}
+
+
+Create a Meeting component take noof users 0 
+and button join meeting when u ckick on button increase he users by one and show the no of people on screen
+
+
+
+Virtual Dom is a betrayer --- when ever we are updating it is not refelecting to DOM
+
+TO UPDATE WE NEED STATE 
+
+TO UPDATE WE NEED STATE 
+STate is an object which needs to be updated 
+once the state is update component is re rendered 
+
+2013 
+Functions -- stateless -- peter parker gangadher 
+Class  -- statefull -- power to update the Ui 
+
+2019 January 
+resigned 
+Enough React we will give u what they are offering 
+
+statefull state is being offered into functions using one word known as HOOKS 
+
+HOOKS  -- functions 
+
+funcion sendMail(){
+
+}
+
+
+function need state
+ react says u need state so use state 
+
+ useState
+
+
+ function X(){
+
+    function uodateUsers(){
+       var x  =  useState()
+
+
+    }
+    return (
+        <>
+
+        </>
+    )
+ }
+
+X is a component 
+
+Hooks must start with useFuncionName
+Hooks must be used at component level not inside the functions
+
+
+useState --- is a hook which provides pwers to powerless 
+state to stateless 
+
+var [property,HandlerFUnction(setProperty)] = useState(initialvalue)
+var [ashu,setAshu] = useState("Chindi")
+var [salary,setSalary] = useState("Bohot hai")
+
+
+setSalary("Bohot Bohot Hai")
+
+setAshu("thodi Chindi")
+
+
+Requirment --- Create a component which will take some data from user 
+
+for Example the information of user and when u click create 
+
+it will show the added data on the screen
+
+function GetResults(location = "hyderabad"){
+
+}
+
+GetResults("hitech city")
+
+function Card({location="Hyderabad"}){
+  return (
+    <>
+    <h1>welcome to {location } </h1>
+  )
+}
+
+Card.defaultProps = {
+    location:"Hyderbad"
+}
+
+Take some dummy data that is array of some products 
+
+[{name,price, rtig}]
+
+in that table edit button will be there 
+
+<input  value="Ashu">
+
+Single Page application -- 
+a page is one and the views are loaded on requirement based on the path
+
+technically in ypur project one body 
+
+
+npm start --- a http server is started at 3000
+
+http://localhost:3000 
+
+this server sends us a page that is index.html and index.html contains our react app 
+
+
+when we define some routes that when ever user will open railways i ahve to open train booking
+
+/railways component is TrainBook 
+/createaccount --- Signup
+/xyz ---- Sumanth
+/pqr -- Ashu
+
+/login -- Login/SignIn
+
+On button i will link it to the path where i wan to navigate 
+
+so i will wrap the element into Link component from react-router-dom 
+
+Syntax 
+import {Link} from "react-router-dom"
+
+<Link to="/login"> 
+<Button>Login</Button>
+</Link>
+
+
+Route params  --- "/path/:parametername"
+
+
+getCakelist()
+
+in js u call a function 
+
+role of frontend dev is always to make a request 
+
+to make a request we have a function fetch()
+
+axios 
+npm install axios 
+
+import axios from 'axios' 
+
+axios(
+    url:"",
+    method:"",
+    data:JSON
+)
+
+axios()  a function call  which may take some time 
+BUt js is asynchronous that it is non blocking it will to next line without the completion of the function 
+
+var response = axios() // NO 
+because response will come somethime later but js will to the next line so response will be undefined 
+
+these functions returns a promise , promise is a bassically a state that can be resolved or rejected 
+
+axios().then((response)=>{},(error)=>{})
+// 200 success
+// 409 error 
+// 500 it is error 
+
+when u are loading cakelist component it is getting rendered. you are bringing the data from api 
+// now u need to update the UI 
+// to update the UI u need state 
+
+// initially cakes will come from state 
+// u will bring it and update the state
+
+u will receive a verification mail from  my gmail 
+u need ot verify that and than only u can login 
+
+api details for login functionaloty are 
+
+url: "/login"
+method:"post",
+data:{email,password}
+
+startTimer()
+
+function X(){
+    // starting a timer 
+
+
+    // is the component rendered here 
+    return (
+        <h1>X Component <h1>
+    )
+
+    startTimer()
+}
+
+when the component is renedered on the ui we would like start the timer 
+
+
+Rendering means displaying of the view 
+
+after component has returned the view i can say component is rendered but here after the return can i write some code 
+
+and before the return statement if i write the code it will executed before rendering only 
+
+
+react gives me a hook which calls a function after the component is rendered 
+
+useEffect(()=>{
+    startTimer()
+},[])
+// array is known as list of dependecies means if thise values are changed than only that function will be called 
+
+useEffect calls the function after component is successfully rendered or mounted 
+
+Empty braces that function will be called only on rendered but not on any rerendering 
+
+when u update the state component is again rendered but that function will be called because of empty braces 
+
+
+name 
+image 
+price 
+ratings
+reviews
+description 
+
+Add TO Cart 
+
+For parameters we must define parameterized route first 
+
+But now comes the query string can be sent to any routes 
+
+/route?firstname=karthik&lastname=koduru&age=10&expereince&salary=toomuc
+Question mark means query string 
+
+For accpeting strings we do not need to modify the routes 
+
+but for parameter we must define one parameterised route first 
